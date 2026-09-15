@@ -67,6 +67,6 @@ SELECT
 UPDATE books
 SET
 
-    book_title = 'GOODS',
+    book_title = 'AMILT',
     book_author = 'ARLYN'
 WHERE book_id = 1;
