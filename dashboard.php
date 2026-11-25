@@ -1,6 +1,6 @@
 <?php
 $host = 'localhost';
-$db   = 'it30a_lab_db';
+$db   = 'it30a_db';
 $user = 'root';
 $pass = '';
 $charset = 'utf8mb4';
@@ -247,13 +247,13 @@ $recentBorrows = $recentStmt->fetchAll();
                         </div>
 
 
-                        <div class="borrow-status <?= $row['return_date'] ? 'returned' : 'borrowed' ?>">
+                        <div class="borrow-status <?= $row['borrow_return_date'] ? 'returned' : 'borrowed' ?>">
 
                             <span class="material-icons">
-                                <?= $row['return_date'] ? 'check_circle' : 'schedule' ?>
+                                <?= $row['borrow_return_date'] ? 'check_circle' : 'schedule' ?>
                             </span>
 
-                            <?= $row['return_date'] ? 'Returned' : 'Borrowed' ?>
+                            <?= $row['borrow_return_date'] ? 'Returned' : 'Borrowed' ?>
 
                         </div>
 
